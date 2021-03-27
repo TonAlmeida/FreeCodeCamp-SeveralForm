@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libery/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Form FreeCodeCamp</title>
+</head>
+<body>
+    <div class="conteiner">
+        <header class="header">
+            <h1 id="title" class="text-center"><b>feeCodeCamp</b> Survey Form</h1>
+            <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form" class="form">
+            <div class="form-grup">
+                <label for="name" id="name-label">Name</label>
+                <input
+                    type="text"
+                    name="Name"
+                    id="name"
+                    class="form-control"
+                    placeholder="type your name here"
+                    required
+                />
+            </div>
+            <div class="form-grup">
+                <label for="email" id="email-label">e-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="e-mail"
+                    class="form-control"
+                    placeholder="type your e-mail here"
+                    required
+                />
+            </div>
+            <div class="form-grup">
+                <label for="number" id="number-label">Age<span class="clue"> (optional)</span></label>
+                <input
+                    type="number"
+                    id="number"
+                    class="form-control"
+                    name="Age"
+                    max="120"
+                    min="12"
+                    placeholder="type your age"
+                    required
+                />
+            </div>
+            <div class="form-grup">
+                <label for="role" id="role-label">Current role</label>
+                <select id="role" class="form-control" name="current-role" placeholder="select your current role" required>
+                    <option checked>--Select your current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full time job</option>
+                    <option value="full-time-learner">Full time learner</option>
+                    <option value="not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-grup">
+                <p class="subtitle"><b>Would you recommend FreeCodeCamp to a friend?</b></p>
+                <label for="definitely" class="label-radio">
+                <input
+                    value="Definitely"
+                    type="radio"
+                    id="definitely"
+                    class="input-radio"
+                    name="user-recommend"
+                /> Definitely</label>
+                <label for="maybe" class="label-radio">
+                <input
+                    value="Maybe"
+                    type="radio"
+                    id="maybe"
+                    class="input-radio"
+                    name="user-recommend"
+                /> Maybe</label>
+                <label for="not-sure" class="label-radio">
+                <input
+                    value="not-sure"
+                    type="radio"
+                    id="not-sure"
+                    class="input-radio"
+                    name="user-recommend"
+                /> Not Sure</label>
+            </div>
+            <div class="form-grup">
+                <label for="dropdown">What is your favorit feature about freeCodeCamp?</label>
+                <select id="dropdown" name="Feature" class="form-control" placeholder="select your favorit feature" required>
+                    <option checked>--Select your favorit feature</option>
+                    <option value="challengs">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="Comunity">Comunity</option>
+                    <option value="open-source">Open Source</option>
+                </select>
+            </div>
+            <div class="form-grup">
+                <p class="subtitle"><b>What would you like to see improved?</b></p>
+                <label for="front-end">
+                <input
+                    value="front-end"
+                    type="checkbox"
+                    id="front-end"
+                    class="improvement"
+                    name="Front-end"
+                /> Front-end projects</label><br>
+                <label for="back-end">
+                <input
+                    value="back-end"
+                    type="checkbox"
+                    id="back-end"
+                    class="improvement"
+                    name="Back-end"
+                /> Back-end projects</label><br>
+                <label for="visualization">
+                <input
+                    value="data-visualization"
+                    type="checkbox"
+                    id="visualization"
+                    class="improvement"
+                    name="Visualization"
+                /> Data visualization</label><br>
+                <label for="Challenges">
+                <input
+                    value="challenges"
+                    type="checkbox"
+                    id="Challenges"
+                    class="improvement"
+                    name="Challenges"
+                /> Challenges</label><br>
+                <label for="open-source">
+                <input
+                    value="open-source"
+                    type="checkbox"
+                    id="open-source"
+                    class="improvement"
+                    name="Open-source"
+                /> Open-source Community</label><br>
+                <label for="help">
+                <input
+                    value="help-rooms"
+                    type="checkbox"
+                    id="help"
+                    class="improvement"
+                    name="Help"
+                /> Gitter help rooms</label><br>
+                <label for="Videos">
+                <input
+                    value="vidios"
+                    type="checkbox"
+                    id="Videos"
+                    class="improvement"
+                    name="Videos"
+                /> Videos</label><br>
+                <label for="Meetups">
+                <input
+                    value="City-meetups"
+                    type="checkbox"
+                    id="Meetups"
+                    class="improvement"
+                    name="Meetups"
+                /> City Meetups</label><br>
+                <label for="Wiki">
+                <input
+                    value="wiki"
+                    type="checkbox"
+                    id="Wiki"
+                    class="improvement"
+                    name="Wiki"
+                /> Wiki</label><br>
+                <label for="Forum">
+                <input
+                    value="forum"
+                    type="checkbox"
+                    id="Forum"
+                    class="improvement"
+                    name="Forum"
+                /> Forum</label><br>
+                <label for="add-courses">
+                <input
+                    value="additional-courses"
+                    type="checkbox"
+                    id="add-courses"
+                    class="improvement"
+                    name="Add-courses"
+                /> Additional Courses</label><br>
+            </div>
+            <div id="div-textarea" class="form-grup">
+                <label for="comments">Any comments or suggestions?</label><br>
+                <textarea id="comments" class="form-content" placeholder="enter your comments here" name="Comments"></textarea>
+            </div>
+            <div id="conteiner-boottom" class="form-grup">
+                <button id="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

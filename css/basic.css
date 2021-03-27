@@ -1,0 +1,69 @@
+/*Css DOCUMENT*/
+html{
+    font-size: large;
+    height: 100%;
+}
+body{
+    background-image: 
+        linear-gradient(
+        1000deg,
+        rgba(48, 48, 148, 0.8),
+        rgba(116, 116, 186, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    
+    display: fixed;
+    padding:0;
+    margin: 0;
+    height: 100%;
+}
+div.conteiner{
+    max-width: 55%;
+    max-height: 100%;
+    margin: auto;
+    position: relative;
+    background: none;
+}
+form{
+    background-color: rgba(1, 1, 44, 0.6);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    margin:0;
+}
+.text-center{
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 3em;
+}
+#description{
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: initial;
+}
+.subtitle{
+    color: #f3f3f3;
+    font-size: 1.8em;
+}
+label{
+    color: #f3f3f3;
+    font-size: 1.5em;
+}
+.label-radio{
+    margin-right: 20px;
+}
+.form-grup{
+    margin: 20px;
+}
+#div-textarea{
+    height: 20%;
+}
+textarea{
+    min-width: 100%;
+    min-height: 90%;
+}
+button{
+    margin: 0;
+    width: 100%;
+    height: 20%;
+}
